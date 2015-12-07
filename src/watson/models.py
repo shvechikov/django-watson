@@ -51,9 +51,7 @@ class SearchEntry(models.Model):
 
     object = GenericForeignKey()
 
-    title = models.CharField(
-        max_length = 1000,
-    )
+    title = models.TextField()
 
     description = models.TextField(
         blank = True,
@@ -63,8 +61,7 @@ class SearchEntry(models.Model):
         blank = True,
     )
 
-    url = models.CharField(
-        max_length = 1000,
+    url = models.TextField(
         blank = True,
     )
 
